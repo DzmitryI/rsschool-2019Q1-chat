@@ -1,0 +1,10 @@
+.fegistration-form-wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#registration-form {
+  width: 50%;
+  margin: 0 auto;
+}

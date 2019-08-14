@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  background: var(--main-color);
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.title {
+  display: inline-block;
+  margin: auto;
+  width: 90%;
+}
+
+.dropdown a {
+  color: var(--main-text-color);
+}
+
+.connect-status {
+  width: 10px;
+  height: 10px;
+  margin: auto 10px;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+}
