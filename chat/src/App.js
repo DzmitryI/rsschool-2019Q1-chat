@@ -82,7 +82,7 @@ export default class App extends React.Component {
     this.client.onmessage = ({ data }) => {
       const { messages } = this.state;
       const newData = JSON.parse(data);
-      newData.map((item) => item.time = this.changeDate(item.time));
+      newData.map((item) => { item.time = this.changeDate(item.time); });
       if (this.client.readyState !== 3 && this.client.readyState !== 0) {
         this.setState({ messages: [...newData, ...messages] });
       }
@@ -124,10 +124,7 @@ export default class App extends React.Component {
         <Title setLogin={this.setLogin} status={status} />
         <MessageList messages={messages} login={login} />
         <SendMessageForm login={login} writeMessage={this.writeMessage} />
-        <ReactModal
-          isOpen={showModal}
-          contentLabel="Minimal Modal Example"
-        >
+        <ReactModal isOpen={showModal}>
           <section className="fegistration-form-wrap">
             <RegistrationForm setLogin={this.setLogin} />
           </section>

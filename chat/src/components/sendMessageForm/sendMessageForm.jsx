@@ -19,7 +19,6 @@ export default class SendMessageForm extends React.Component {
 
   render() {
     const { textMessage } = this.state;
-    // const { login } = this.props;
     return (
       <form className="send-message-form" onSubmit={this.handleSubmitForm}>
         <input
