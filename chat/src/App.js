@@ -18,17 +18,20 @@ window.onblur = () => {
 export default class App extends React.Component {
   client = null;
 
-  state = {
-    login: '',
-    messages: [],
-    sendMessages: [],
-    status: false,
-    showModal: true,
-  };
-
   writeMessage = this.writeMessage.bind(this);
 
   setLogin = this.setLogin.bind(this);
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      login: '',
+      messages: [],
+      sendMessages: [],
+      status: false,
+      showModal: true,
+    };
+  }
 
   componentDidMount() {
     if (localStorage.getItem('login') !== '') {
