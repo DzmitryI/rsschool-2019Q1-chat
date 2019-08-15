@@ -25,6 +25,8 @@ Build production version
 | 3h | Add notifications for new messages |
 | 3h | Display notification only when app is not visible |
 | 2h | You should separately handle cases when the app goes online/offline |
-| 3h | deploy to heroku|
+| 3h | deploy to heroku |
+| 3h | Add emoji to send message form |
+| 2h | Add avatar to message list |
 
 
