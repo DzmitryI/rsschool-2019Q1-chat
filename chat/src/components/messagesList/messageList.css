@@ -20,6 +20,10 @@
   align-items: flex-end;
 }
 
+.message-conteiner {
+  word-break: break-word;
+}
+
 .message-conteiner div:nth-child(1) {
   font-size: 11px;
   color: var(--main-text-color);

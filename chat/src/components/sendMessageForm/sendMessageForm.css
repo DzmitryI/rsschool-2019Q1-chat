@@ -60,3 +60,10 @@
 .emoji-table-none {
   visibility: hidden;
 }
+
+@media (max-width: 400px) {
+  #show-emoji {
+    font-size: 15px;
+    bottom: 3%;
+  }
+}

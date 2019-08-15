@@ -76,7 +76,7 @@ export default class App extends React.Component {
   }
 
   start() {
-    this.client = new WebSocket('ws://st-chat.shas.tel');
+    this.client = new WebSocket('wss://wssproxy.herokuapp.com/');
     this.client.onopen = () => this.setState({ status: true, messages: [] });
     this.client.onclose = () => {
       this.setState({ status: false });
