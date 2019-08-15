@@ -63,7 +63,7 @@ export default class SendMessageForm extends React.Component {
             placeholder="Type your message and hit ENTER"
           />
         </form>
-        <span id="show-emoji" role="img" aria-label="Snowman" onClick={this.toogleEmojiState}>😎</span>
+        <span id="show-emoji" role="presentation" onClick={this.toogleEmojiState}>{'😎'}</span>
         <div className={cn(emojiPickerWrap)}>
           <EmojiPicker onEmojiClick={this.addEmoji} />
         </div>

@@ -1,16 +1,17 @@
-.message-list {
+.messages-list {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 25px 0 0 6px;
+  padding: 25px 6px 0 6px;
   box-sizing: border-box;
   background: var(--secondary-colo);
   overflow: hidden;
 }
 
 .message {
+  display: flex;
   list-style-type: none;
-  margin: 15px 10px;
+  margin: 15px 0;
 }
 
 .me {
@@ -19,17 +20,27 @@
   align-items: flex-end;
 }
 
-.message div:nth-child(1) {
+.message-conteiner div:nth-child(1) {
   font-size: 11px;
   color: var(--main-text-color);
   opacity: 0.9;
   margin-bottom: 6px;
 }
 
-.message div:nth-child(2) {
+.message-conteiner div:nth-child(2) {
   background: var(--main-color);
   color: var(--secondary-color);
   display: inline;
   padding: 4px 8px;
   border-radius: 8px;
+}
+
+.avatar-activ {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.avatar {
+  display: none;
 }
